@@ -1,0 +1,37 @@
+.jumbotron {
+  background-image: url("http://thegalleryupstairs.com/wp-content/uploads/2014/11/Picture-Framing-5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:#F3F2F3;
+  border-radius: 0px;
+  background-color:#F3F2F3;
+}
+#jtronText{
+  background-color: #2B312A;
+  padding-bottom: 1px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+#surveyDiv {
+  position: relative;
+  width: 50%;
+  top:25px;
+  background-color: #2B312A;
+  color:#F3F2F3;
+  padding: 10px;
+  font-weight:bold;
+  border-radius: 15px;
+}
+#submitBtn{
+  background-color: #8F8E8D;
+  color: #F3F2F3;
+  border: none;
+  width: 90px;
+  text-align:center;
+  margin-right:10px;
+  font-weight:bold;
+}
+#submitBtn:hover {
+  color:white;
+}

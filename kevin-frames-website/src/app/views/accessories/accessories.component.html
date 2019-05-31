@@ -1,0 +1,23 @@
+<div id='accessoriesMain'>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <div id='jtronText'>
+      <h1>Accessories</h1>
+      <p>Up to date availablility of framing accessories.</p>
+    </div>
+  </div>
+  <div id='metalDiv' class='container-fluid' style='text-align:center;' align='center'>
+      <div class='row' *ngIf='accessoryArr' style='text-align:center;' align='center'>
+        <div *ngFor='let accessory of accessoryArr' align='center'>
+          <div class='col'>
+            <h6>{{accessory.frameTitle}}</h6>
+            <img src={{accessory.accessoryPic}}>
+            <p><b>Type: </b>{{accessory.accessoryType}}<br><b>Color: </b>{{accessory.accessoryColor}}<br><b>Price: </b>{{accessory.accessoryPrice}}
+            <br><b>Width: </b>{{accessory.accessoryWidth}} <b>Height: </b>{{accessory.accessoryHeight}}</p>
+            <div *ngIf='isAdmin'>
+              <button type='button' id={{accessory._id}} (click)='deleteAccessory(accessory._id);' style='position:relative;bottom:32px;float:right;border:none;color:red;font-size:20px;background-color:#F3F2F3;'><i class="fas fa-times-circle"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

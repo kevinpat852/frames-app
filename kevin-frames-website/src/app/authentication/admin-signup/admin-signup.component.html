@@ -1,0 +1,26 @@
+<div id='adminSignupMain' align='center'>
+  <a id='normalSignupLink' href='/signup'>Normal Signup</a><br>
+  <div id='adminSignupDiv'>
+    <form [formGroup]='adminSignupForm' style='text-align:left;'>
+      <legend style='text-align:center;'>Admin Signup</legend>
+      <div class='form-group'>
+        <label for='firstName'>First Name: </label>
+        <input type='text' class='form-control' formControlName='firstName' id='firstName' placeholder='Enter First Name' name='firstName' required>
+      </div>
+      <div class='form-group'>
+        <label for='lastName'>Last Name: </label>
+        <input type='text' class='form-control' formControlName='lastName' id='lastName' placeholder='Enter Last Name' name='lastName' required>
+      </div>
+      <div class='form-group'>
+        <label for='username'>Username: </label>
+        <input type='text' class='form-control' formControlName='username' id='username' placeholder='Enter Username' name='username' required>
+      </div>
+      <div class='form-group'>
+        <label for='password'>Password: </label>
+        <input type='password' class='form-control' formControlName='password' id='password' placeholder='Enter Password' name='password' required>
+      </div>
+      <button id='signupBtn' type="button" class="btn btn-primary" [disabled]='adminSignupForm.invalid' (click)='onAdminSignup();'>Admin Signup</button>
+      <button id='loginBtn' type="button" class="btn btn-primary" routerLink = "/adminLogin">Admin Login</button>
+    </form>
+  </div>
+</div><br>

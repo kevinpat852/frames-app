@@ -1,0 +1,23 @@
+<div id='woodMain'>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <div id='jtronText'>
+      <h1>Wooden Frames</h1>
+      <p>Up to date availablility of wooden picture frames.</p>
+    </div>
+  </div>
+  <div id='woodDiv' class='container-fluid' style='text-align:center;' align='center'>
+    <div class='row' *ngIf='framesArr' style='text-align:center;' align='center'>
+      <div *ngFor='let frame of framesArr; index as i'>
+        <div class='col'>
+          <h6>{{frame.frameTitle}}</h6>
+          <img src={{frame.framePic}}>
+          <p><b>Type: </b>{{frame.frameType}}<br><b>Color: </b>{{frame.frameColor}}<br><b>Price: </b>{{frame.framePrice}}
+          <br><b>Width: </b>{{frame.frameWidth}} <b>Height: </b>{{frame.frameHeight}}</p>
+          <div *ngIf='isAdmin'>
+            <button name='deleteBtn' id={{frame._id}} type='button' (click)='deleteWood(frame._id);' style='position:relative;bottom:32px;float:right;border:none;color:red;font-size:20px;background-color:#F3F2F3;'><i class="fas fa-times-circle"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

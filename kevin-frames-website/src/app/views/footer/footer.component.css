@@ -1,0 +1,22 @@
+.footer {
+  background-color: #8F8E8D;
+  border-radius: 0px;
+  color:#F3F2F3;
+  font-weight: bold;
+  text-align:center;
+  padding: 5px;
+  position: relative;
+  bottom: 0px;
+}
+ul {
+  padding: 0px;
+  text-align:center;
+  color: #0356b6;
+}
+h4 {
+  margin: 0px;
+}
+li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

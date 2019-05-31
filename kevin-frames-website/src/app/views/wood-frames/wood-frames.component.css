@@ -1,0 +1,27 @@
+.jumbotron {
+  background-image: url("http://thegalleryupstairs.com/wp-content/uploads/2014/11/Picture-Framing-5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color:#F3F2F3;
+  border-radius: 0px;
+  background-color:#F3F2F3;
+}
+#jtronText{
+  background-color: #2B312A;
+  padding-bottom: 1px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.col {
+  margin: 0px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+p {
+  margin: 0px;
+}

@@ -1,0 +1,22 @@
+<div id='surveyMain' align='center'>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <div id='jtronText'>
+      <h1>Survey</h1>
+      <p>Your opinion matters, submit feedback below.</p>
+    </div>
+  </div>
+  <div id='surveyDiv'>
+    <form [formGroup]='surveyForm' style='text-align:left;'>
+      <legend style='text-align:center;'>Survey</legend>
+      <div class='form-group'>
+        <label for='feedback'>Feedback: </label>
+        <textarea class='form-control' formControlName='feedback' id='feedback' placeholder='Enter Your Feedback' name='feedback' required></textarea>
+      </div>
+      <div class='form-group'>
+        <label for='suggestions'>Suggestions: </label>
+        <textarea rows="" cols="" class='form-control' formControlName='suggestions' id='suggestions' placeholder='Enter Your Suggestions' name='suggestions'></textarea>
+      </div>
+      <button id='submitBtn' type="button" class="btn btn-primary" [disabled]='surveyForm.invalid' (click)='onSurvey();'>Submit</button>
+    </form>
+  </div> <br>
+</div>

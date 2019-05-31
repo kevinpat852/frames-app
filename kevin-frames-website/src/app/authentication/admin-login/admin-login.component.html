@@ -1,0 +1,18 @@
+<div id='adminLoginMain' align='center'>
+  <a id='normalLoginLink' href='/login'>Regular Login</a><br>
+  <div id='adminLoginDiv'>
+    <form [formGroup]='adminLoginForm' style='text-align:left;'>
+      <legend style='text-align:center;'>Admin Login</legend>
+      <div class='form-group'>
+        <label for='username'>Username: </label>
+        <input type='text' class='form-control' formControlName='username' id='username' placeholder='Enter Username' name='username' required>
+      </div>
+      <div class='form-group'>
+        <label for='password'>Password: </label>
+        <input type='password' class='form-control' formControlName='password' id='password' placeholder='Enter Password' name='password' required>
+      </div>
+      <button id='loginBtn' type="button" class="btn btn-primary" [disabled]='adminLoginForm.invalid' (click)='onAdminLogin();'>Admin Login</button>
+      <button id='registerBtn' type="button" class="btn btn-primary" routerLink = "/adminSignup">Admin Register</button>
+    </form>
+  </div>
+</div><br>
